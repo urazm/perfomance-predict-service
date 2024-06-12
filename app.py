@@ -5,8 +5,6 @@ app = Flask(__name__)
 
 model = joblib.load('models/itis_grant_model.pkl')
 
-
-model_grant = joblib.load('models/itis_grant_model.pkl')
 model_student_performance = joblib.load('models/student_performance_model.pkl')
 
 
