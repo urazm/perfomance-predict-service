@@ -3,15 +3,6 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-
-@app.route('/', methods=['GET', 'POST'])
-def main_test_func():
-    if request.method == 'POST':
-        return "You sent POST request"
-    else:
-        return "You sent GET request"
-
-
 model = joblib.load('models/itis_grant_model.pkl')
 
 
